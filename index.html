@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore database</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login">
+        <h2>Account</h2>
+        <div class="container">
+            <input type="email" class="input email">
+            <label>Email: example@example.com</label>
+        </div>
+        <div class="container">
+            <input type="password" class="input password">
+            <label>Password: At least 6 characters</label>
+        </div>
+        <div class="container-submit">
+            <input type="submit" class="submit" id="create" value="Create">
+            <input type="submit" class="submit" id="signin" value="Sign in"> <!-- não coloque a tag de input submit dentro de <form></form>, pois apresenta erro no firebase -->
+        </div>
+        <div class="note">
+            <label>Use admin account:</label>
+            <label>Email: admin@admin.com</label>
+            <label>Password: @admin</label>
+        </div>
+
+    </div>
+
+    <div class="logged">
+        VOCE ESTA LOGADO
+        <input type="submit" class="submit" id="logout" value="Create">
+
+    </div>
+
+    <script type="module" src="./firestore.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
