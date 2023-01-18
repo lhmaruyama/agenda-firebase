@@ -31,13 +31,23 @@
     </div>
 
     <div class="logged">
-        VOCE ESTA LOGADO
-        <input type="submit" class="submit" id="logout" value="Create">
-
+        <h2>You are logged in</h2>
+        <input type="submit" class="submit" id="logout" value="Logout">
+        <h3>Notes</h3>
+        <form class="form">
+            <textarea class="notes"></textarea>
+            <input type="datetime-local" class="datetime">
+        </form>
+        <input type="submit" class="submit" id="add" value="Save note">
+        <ul class="list"></ul>
+        <!-- <input type="submit" class="submit" id="edit" value="Edit note"> -->
+        <!-- <input type="submit" class="submit" id="delete" value="Delete note"> -->
     </div>
 
-    <script type="module" src="./firestore.js"></script>
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./auth.js"></script>
+    <script type="module" src="./crud.js"></script>
+    <!-- é necessário tipar (type="module") para trabalhar com módulos(import e export) no javascript, assim os arquivos se conectam-->
 
 </body>
 </html>

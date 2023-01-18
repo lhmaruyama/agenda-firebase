@@ -1,6 +1,8 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  import {getFirestore, doc, setDoc, collection, addDoc} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"
   
-  const firebaseConfig = {
+
+    const firebaseConfig = {
       apiKey: "AIzaSyCkWELKMp9QMKr81cGpJpQWt_kn3IM3JmY",
       authDomain: "myproject-882ea.firebaseapp.com",
       projectId: "myproject-882ea",
@@ -9,8 +11,25 @@
       appId: "1:664369998900:web:009c4f7ef9fbe8c8ae6e61"
     }
     
-    const app = initializeApp(firebaseConfig);
+  const app = initializeApp(firebaseConfig); //inicializar o firebase
+  export const db = getFirestore(app) // inicializar o cloud firestore
+  export const fire = {
+                doc: doc,
+                setDoc: setDoc,
+                collection: collection,
+                addDoc: addDoc
+              }
 
+
+//inserindo um data com id especifico numa collection por meio da função setDoc e doc dentro do banco de dados db
+//await setDoc(doc(db, "collection", "id"), data);
+
+//guardando dentro da variavel docId o ID gerado pelo firebase do data numa colletion por meio da função collection e addDoc
+//const docId = await addDoc(collection(db, "collection"),data)
+
+// criar uma referência de documento com um ID gerado automaticamente e usar a referência posteriormente
+// const newRef = doc(collection(db, "collection"))
+// await setDoc(newRef, data)
 
 
 /*   export function firestore() {

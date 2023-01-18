@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
 //import {} from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
 
 const create = document.querySelector("#create")
@@ -44,4 +44,14 @@ signin.onclick = function(){
         const errorMessage = error.message;
         alert("Usuário ou senha incorreto")
       });
+}
+
+const logout = document.querySelector("#logout")
+logout.onclick = function(){
+    const auth = getAuth();
+signOut(auth).then(() => {
+  // Sign-out successful.
+}).catch((error) => {
+  // An error happened.
+});
 }
