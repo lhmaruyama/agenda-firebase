@@ -13,7 +13,7 @@ body {
     box-shadow: 3px 3px 1px 0px #00000050;
     width: 380px;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .container{
@@ -50,7 +50,6 @@ label{
     flex-direction: column;
 }
 .logged{
-    /* display: none; */
     background-color: #f0f8ff20;
     padding: 30px;
     padding-bottom: 70px;
@@ -58,6 +57,7 @@ label{
     box-shadow: 3px 3px 1px 0px #00000050;
     width: 380px;
     text-align: center;
+    display: none;
     display: flex;
     flex-direction: column;
     align-items: center;

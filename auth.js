@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged ,signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
 //import {} from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
 
 const create = document.querySelector("#create")
@@ -22,22 +22,27 @@ create.onclick = function(){
     alert('erro' + errorCode)
 
     });
+
 }
 
 const signin = document.querySelector("#signin")
 
 signin.onclick = function(){
-    let email = document.querySelector(".email").value
-    let password = document.querySelector(".password").value
+    //let email = document.querySelector(".email").value
+    const email = "admin@admin.com"
+    const password = "@admin"
+    //let password = document.querySelector(".password").value
     //alert(email + " " + password)
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        let login = document.querySelector(".login")
-        login.style.display = "none"
-        let logged = document.querySelector(".logged")
-        logged.style.display = "block"
+        const uid = user.uid //ID do usuário
+        //let login = document.querySelector(".login")
+        //login.style.display = "none"
+        //let logged = document.querySelector(".logged")
+        //logged.style.display = "block"
+        alert(uid)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -45,6 +50,25 @@ signin.onclick = function(){
         alert("Usuário ou senha incorreto")
       });
 }
+
+
+export function userId(){
+  onAuthStateChanged(getAuth(),((userActive)=>{
+  if(userActive){
+    const uid = userActive.uid //id do usuário
+    return uid
+  }
+}))}
+
+export function teste(){
+  let blabla = 1 + 2
+  return blabla
+}
+/*     const variavel = teste()
+alert(variavel) */
+
+
+
 
 const logout = document.querySelector("#logout")
 logout.onclick = function(){
