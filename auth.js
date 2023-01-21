@@ -1,6 +1,9 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged ,signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
 //import {} from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
 
+export const auth = getAuth()
+export const onAuth = onAuthStateChanged
+
 const create = document.querySelector("#create")
 
 create.onclick = function(){
@@ -42,7 +45,7 @@ signin.onclick = function(){
         //login.style.display = "none"
         //let logged = document.querySelector(".logged")
         //logged.style.display = "block"
-        alert(uid)
+        //alert(uid)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -52,13 +55,22 @@ signin.onclick = function(){
 }
 
 
-export function userId(){
+/* export function userId(){
+  //alert("chamou a função")
+  const auth = getAuth();
+  
+  onAuthStateChanged(auth,((userActive)=>{
+    userActive.uid //id do usuário
+
+}))} */
+
+/* function userId(){
   onAuthStateChanged(getAuth(),((userActive)=>{
   if(userActive){
     const uid = userActive.uid //id do usuário
-    return uid
+    return alert(uid)
   }
-}))}
+}))} */
 
 export function teste(){
   let blabla = 1 + 2

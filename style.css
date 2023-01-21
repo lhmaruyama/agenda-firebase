@@ -1,3 +1,9 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -6,6 +12,7 @@ body {
     font-size: 30px;
 }
 .login{
+    margin-top: 30px;
     background-color: #f0f8ff20;
     padding: 30px;
     padding-bottom: 70px;
@@ -13,7 +20,7 @@ body {
     box-shadow: 3px 3px 1px 0px #00000050;
     width: 380px;
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 
 .container{
@@ -43,6 +50,7 @@ label{
     font-weight: bold;
     cursor: pointer;
     font-size: 17px;
+    margin: 20px;
 }
 .note{
     margin-top: 50px;
@@ -50,6 +58,7 @@ label{
     flex-direction: column;
 }
 .logged{
+    margin-top: 30px;
     background-color: #f0f8ff20;
     padding: 30px;
     padding-bottom: 70px;
@@ -57,7 +66,7 @@ label{
     box-shadow: 3px 3px 1px 0px #00000050;
     width: 380px;
     text-align: center;
-    display: none;
+    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,4 +79,24 @@ label{
 }
 .datetime{
     width: 240px;
+}
+
+.list {
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    background-color:#fa6d3940;
+}
+.bodyBox{
+    background-color:#fa9f7e20;
+
 }
