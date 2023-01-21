@@ -5,9 +5,10 @@ Foi implementado o login com usuário pré cadastrado, mas é possível cadastra
 
 ## Objetivo do projeto
 -Aprender e praticar o desenvolvimento de códigos para requisições do tipo GET, POST e DELETE consumindo dados via API.
+
 -Aprender e praticar criação e manipulação de banco de dados
 
-<img src='./agenda1.png' heigth=80em >
+<img src='./agenda1.PNG' heigth=80em >
 <img src='./agenda2.png' heigth=80em >
 
 <br>
