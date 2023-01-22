@@ -8,10 +8,21 @@ Foi implementado o login com usuário pré cadastrado, mas é possível cadastra
 
 -Aprender e praticar criação e manipulação de banco de dados
 
-<img src='./agenda1.png' heigth=80em >
-<img src='./agenda2.png' heigth=80em >
+## Deploy
+Você pode usar o aplicativo no seu navegador clicando nas imagens abaixo:
+
 
 <br>
+<a href='https://lhmaruyama.github.io/agenda-firebase/'><img src='./agenda1.png' heigth="350" width="350"></a>
+
+<br>
+
+<a href='https://lhmaruyama.github.io/agenda-firebase/'><img src='./agenda2.png' heigth="350" width="350"></a>
+<br>
+
+## Tecnologias
+O projeto foi desenvolvido usando apenas HTML, CSS e JAVASCRIPT,  além do Firebase.
+
 <hr><br>
 
 ## Sobre Cloud Firestore
