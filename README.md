@@ -1,12 +1,15 @@
 ## Sobre o projeto
-Neste projeto criei uma página web Agenda que usa o Cloud Firestore e o Authentication ambos do Firebase da Google. Todas as anotações, tarefas e compromissos datados ficam armazenados na nuvem e atrelados ao usuário que as criaram.
+Neste projeto criei uma página web Agenda que usa o Cloud Firestore e o Authentication ambos do Firebase da Google. Todas as anotações, tarefas e compromissos datados incluídos na agenda ficam armazenados na nuvem e atrelados ao usuário que os criaram.
 
-Foi implementado o login com usuário pré cadastrado, mas é possível cadastrar novos usuários usando o Authentication.
+Faça o login com um usuário pré cadastrado, mas é possível cadastrar novos usuários com um email e senha.
 
 ## Objetivo do projeto
 -Aprender e praticar o desenvolvimento de códigos para requisições do tipo GET, POST e DELETE consumindo dados via API.
 
--Aprender e praticar criação e manipulação de banco de dados
+-Aprender e praticar criação e manipulação de banco de dados.
+
+-Aprender e conhecer sobre as ferramentas do Authentication e Cloud Firestore
+
 
 ## Deploy
 Você pode usar o aplicativo no seu navegador clicando nas imagens abaixo:
@@ -14,10 +17,14 @@ Você pode usar o aplicativo no seu navegador clicando nas imagens abaixo:
 
 <br>
 <a href='https://lhmaruyama.github.io/agenda-firebase/'><img src='./agenda1.png' heigth="350" width="350"></a>
-
 <br>
-
+Imagem da tela de login/cadastro
+<br>
+<br>
 <a href='https://lhmaruyama.github.io/agenda-firebase/'><img src='./agenda2.png' heigth="350" width="350"></a>
+<br>
+Imagem da tela da agenda
+<br>
 <br>
 
 ## Tecnologias
